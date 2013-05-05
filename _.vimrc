@@ -24,3 +24,8 @@ Bundle 'gnupg'
 " ...
 
 filetype plugin indent on     " required!
+set cindent
+set smartindent
+set autoindent
+set tabstop=4 softtabstop=4 smarttab
+set shiftwidth=4
