@@ -1,0 +1,57 @@
+################################################################################
+# Ce fichier comporte des options que j'utilise partout (ie: qui ne sont pas
+# spécifiques à un site). Il pourra être inclu dans le fichier de configuration
+# pricipal de mutt (~/.muttrc) avec la directive source ~/.muttrc-general
+################################################################################
+
+# utiliser le To: d'un message recu comme From: de la réponse
+# (implique de specifier alternates)
+set reverse_name
+
+# cache data to speed up imap
+set header_cache=~/.mutt-hcache
+set message_cachedir="~/.mutt-mcache"
+
+# dessines des arbres avec les discussions
+set sort=threads # pratique pour les mailing-lists
+set collapse_unread=yes
+
+# on peut éditer les headers dans vim
+set edit_headers=yes
+
+
+#####################  COULEURS  ##########################
+color normal default default
+color tree default default
+color quoted green default
+color indicator	brightyellow red
+color status white blue
+color search default green	# how to hilite search patterns in the pager
+color hdrdefault red default
+color body magenta default "(ftp|http)://[^ ]+"	# point out URLs
+color body magenta default [-a-z_0-9.]+@[-a-z_0-9.]+	# e-mail addresses
+color underline brightgreen default
+color signature cyan default 
+color tilde blue default
+
+# attributes when using a mono terminal
+mono header underline ^(From|Subject):
+mono quoted bold
+
+# Specifie les headers que l'on veut
+ignore *
+unignore From:
+unignore Subject:
+unignore Date:
+unignore To:
+unignore Cc:
+hdr_order Date: Subject: From: To: Cc:
+
+#macros
+
+#Envoie dans le dossier des spams
+macro index <delete> s=probably-spam<return>y
+
+#       vim:ft=muttrc
+
+#EOF
