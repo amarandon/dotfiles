@@ -27,5 +27,6 @@ filetype plugin indent on     " required!
 set cindent
 set smartindent
 set autoindent
-set tabstop=4 softtabstop=4 smarttab
+set tabstop=4 softtabstop=4 smarttab expandtab
 set shiftwidth=4
+syntax on
