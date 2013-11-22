@@ -10,6 +10,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
+Bundle 'jamessan/vim-gnupg'
 " Bundle 'scrooloose/nerdtree'
 " Bundle 'scrooloose/syntastic'
 Bundle "alfredodeza/khuno.vim"
@@ -23,10 +24,11 @@ Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'nvie/vim-flake8'
-Bundle 'bling/vim-airline'
+" Bundle 'bling/vim-airline'
 Bundle 'mhinz/vim-signify'
 Bundle 'moll/vim-bbye'
 Bundle 'matze/vim-move'
+Bundle 'ingydotnet/yaml-vim'
 
 " General options
 filetype indent plugin on
@@ -71,3 +73,5 @@ endfunction
 set laststatus=2
 
 let g:move_key_modifier = 'C'
+
+au BufNewFile,BufRead *.yaml,*.yml,*.sls    setf yaml
