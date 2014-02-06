@@ -30,6 +30,8 @@ Bundle 'moll/vim-bbye'
 Bundle 'matze/vim-move'
 Bundle 'ingydotnet/yaml-vim'
 Bundle 'sbl/scvim'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'kchmck/vim-coffee-script'
 
 " General options
 filetype indent plugin on
