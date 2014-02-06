@@ -29,6 +29,7 @@ Bundle 'mhinz/vim-signify'
 Bundle 'moll/vim-bbye'
 Bundle 'matze/vim-move'
 Bundle 'ingydotnet/yaml-vim'
+Bundle 'sbl/scvim'
 
 " General options
 filetype indent plugin on
@@ -75,3 +76,5 @@ set laststatus=2
 let g:move_key_modifier = 'C'
 
 au BufNewFile,BufRead *.yaml,*.yml,*.sls    setf yaml
+
+let g:sclangTerm = "gnome-terminal -x $SHELL -ic"
