@@ -11,27 +11,39 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'jamessan/vim-gnupg'
-" Bundle 'scrooloose/nerdtree'
-" Bundle 'scrooloose/syntastic'
 Bundle "alfredodeza/khuno.vim"
 Bundle 'mileszs/ack.vim'
 Bundle 'jmartindf/vim-tcomment'
-"Bundle 'python-mode'
 Bundle 'tpope/vim-fugitive'
 Bundle 'majutsushi/tagbar'
-" Bundle 'easytags'
-" Bundle 'UltiSnips'
 Bundle 'kien/ctrlp.vim'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'nvie/vim-flake8'
-" Bundle 'bling/vim-airline'
 Bundle 'mhinz/vim-signify'
 Bundle 'moll/vim-bbye'
 Bundle 'matze/vim-move'
 Bundle 'ingydotnet/yaml-vim'
 Bundle 'sbl/scvim'
 Bundle 'digitaltoad/vim-jade'
-Bundle 'kchmck/vim-coffee-script'
+Bundle 'Shutnik/jshint2.vim'
+Bundle 'UltiSnips'
+Bundle 'JavaScript-Indent'
+Plugin 'honza/vim-snippets'
+" Bundle 'jelera/vim-javascript-syntax'
+" Bundle 'kchmck/vim-coffee-script'
+" Bundle 'scrooloose/nerdtree'
+" Bundle 'scrooloose/syntastic'
+"Bundle 'python-mode'
+" Bundle 'scrooloose/nerdtree'
+" Bundle 'scrooloose/syntastic'
+" Bundle 'scrooloose/nerdtree'
+" Bundle 'scrooloose/syntastic'
+" Bundle 'easytags'
+" Bundle 'bling/vim-airline'
+" Bundle 'mustache/vim-mustache-handlebars'
+" Bundle 'slim-template/vim-slim'
+" Bundle 'VimClojure'
+" Bundle 'pbrisbin/html-template-syntax'
 
 " General options
 filetype indent plugin on
@@ -80,3 +92,7 @@ let g:move_key_modifier = 'C'
 au BufNewFile,BufRead *.yaml,*.yml,*.sls    setf yaml
 
 let g:sclangTerm = "gnome-terminal -x $SHELL -ic"
+
+
+" JSHint
+let jshint2_save = 1
