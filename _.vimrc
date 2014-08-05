@@ -31,6 +31,8 @@ Bundle 'matze/vim-move'
 Bundle 'ingydotnet/yaml-vim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'guns/vim-clojure-static'
+Bundle 'paredit.vim'
 
 " General options
 filetype indent plugin on
