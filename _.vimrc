@@ -13,7 +13,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'jamessan/vim-gnupg'
 Bundle "alfredodeza/khuno.vim"
 Bundle 'mileszs/ack.vim'
-Bundle 'jmartindf/vim-tcomment'
+Bundle 'tComment'
 Bundle 'tpope/vim-fugitive'
 Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
