@@ -27,8 +27,9 @@ Bundle 'sbl/scvim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'Shutnik/jshint2.vim'
 Bundle 'UltiSnips'
-Bundle 'JavaScript-Indent'
+" Bundle 'JavaScript-Indent'
 Plugin 'honza/vim-snippets'
+Plugin 'elixir-lang/vim-elixir'
 " Bundle 'jelera/vim-javascript-syntax'
 " Bundle 'kchmck/vim-coffee-script'
 " Bundle 'scrooloose/nerdtree'
@@ -59,6 +60,7 @@ set incsearch
 set wildignore=*.pyc
 set t_Co=256
 set showcmd
+set title
 
 " Custom mappings
 map <Leader>x :TComment<Return>
