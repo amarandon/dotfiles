@@ -30,6 +30,7 @@ Bundle 'UltiSnips'
 " Bundle 'JavaScript-Indent'
 Plugin 'honza/vim-snippets'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'vim-auto-save'
 " Bundle 'jelera/vim-javascript-syntax'
 " Bundle 'kchmck/vim-coffee-script'
 " Bundle 'scrooloose/nerdtree'
@@ -94,7 +95,7 @@ let g:move_key_modifier = 'C'
 au BufNewFile,BufRead *.yaml,*.yml,*.sls    setf yaml
 
 let g:sclangTerm = "gnome-terminal -x $SHELL -ic"
-
+let g:auto_save = 1
 
 " JSHint
 let jshint2_save = 1
