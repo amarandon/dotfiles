@@ -14,7 +14,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'jamessan/vim-gnupg'
 Bundle "alfredodeza/khuno.vim"
 Bundle 'mileszs/ack.vim'
-Bundle 'jmartindf/vim-tcomment'
+Bundle 'tComment'
 Bundle 'tpope/vim-fugitive'
 Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
@@ -33,6 +33,8 @@ Bundle 'Shutnik/jshint2.vim'
 Bundle 'UltiSnips'
 " Bundle 'JavaScript-Indent'
 Plugin 'honza/vim-snippets'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'vim-auto-save'
 " Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
 " Bundle 'kchmck/vim-coffee-script'
@@ -64,6 +66,7 @@ set incsearch
 set wildignore=*.pyc
 set t_Co=256
 set showcmd
+set title
 
 " Custom mappings
 map <Leader>x :TComment<Return>
@@ -97,7 +100,7 @@ let g:move_key_modifier = 'C'
 au BufNewFile,BufRead *.yaml,*.yml,*.sls    setf yaml
 
 let g:sclangTerm = "gnome-terminal -x $SHELL -ic"
-
+let g:auto_save = 1
 
 " JSHint
 let jshint2_save = 1
