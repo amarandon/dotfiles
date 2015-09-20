@@ -7,6 +7,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'elixir-lang/vim-elixir'
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
@@ -30,9 +31,10 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'paredit.vim'
 Bundle 'Shutnik/jshint2.vim'
 Bundle 'UltiSnips'
-Bundle 'JavaScript-Indent'
+" Bundle 'JavaScript-Indent'
 Plugin 'honza/vim-snippets'
 " Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
 " Bundle 'kchmck/vim-coffee-script'
 " Bundle 'scrooloose/nerdtree'
 " Bundle 'scrooloose/syntastic'
