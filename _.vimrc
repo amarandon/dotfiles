@@ -7,6 +7,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'vim-less'
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
@@ -30,7 +31,6 @@ Bundle 'UltiSnips'
 " Bundle 'JavaScript-Indent'
 Plugin 'honza/vim-snippets'
 Plugin 'elixir-lang/vim-elixir'
-Plugin 'vim-auto-save'
 " Bundle 'jelera/vim-javascript-syntax'
 " Bundle 'kchmck/vim-coffee-script'
 " Bundle 'scrooloose/nerdtree'
@@ -99,3 +99,6 @@ let g:auto_save = 1
 
 " JSHint
 let jshint2_save = 1
+
+" Load skeleton
+autocmd BufNewFile  *.html 0r ~/.vim/skeleton/skeleton.html
