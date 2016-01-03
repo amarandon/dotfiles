@@ -36,6 +36,8 @@ Bundle 'isRuslan/vim-es6'
 " Bundle 'JavaScript-Indent'
 Plugin 'honza/vim-snippets'
 Plugin 'vim-auto-save'
+Bundle 'mattn/emmet-vim'
+" Bundle 'JavaScript-Indent'
 " Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
 " Bundle 'kchmck/vim-coffee-script'
@@ -120,3 +122,6 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
+
+" Load skeleton
+autocmd BufNewFile  *.html 0r ~/.vim/skeleton/skeleton.html
