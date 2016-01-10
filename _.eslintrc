@@ -1,6 +1,9 @@
 {
     "parser": "babel-eslint",
     "env": {
+        "node": true,
+        "browser": true,
+        "debug": true
     },
     "settings": {
         "ecmascript": 6,
