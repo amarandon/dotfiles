@@ -2,8 +2,7 @@
     "parser": "babel-eslint",
     "env": {
         "node": true,
-        "browser": true,
-        "debug": true
+        "browser": true
     },
     "settings": {
         "ecmascript": 6,
