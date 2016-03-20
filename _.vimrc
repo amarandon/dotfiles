@@ -88,14 +88,6 @@ hi DiffAdd term=bold ctermbg=2 guibg=4
 let g:tagbar_sort = 0
 set tags+=~/tags
 
-" pdb breakpoint
-map <Leader>d :call InsertPdbLine()<CR>
-
-function! InsertPdbLine()
-    let trace = expand("import pdb; pdb.set_trace()")
-    execute "normal o".trace
-endfunction
-
 set laststatus=2
 
 let g:move_key_modifier = 'C'
