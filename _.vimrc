@@ -17,7 +17,7 @@ Bundle "alfredodeza/khuno.vim"
 Bundle 'mileszs/ack.vim'
 Bundle 'tComment'
 Bundle 'tpope/vim-fugitive'
-Bundle 'majutsushi/tagbar'
+" Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'nvie/vim-flake8'
@@ -25,11 +25,11 @@ Bundle 'mhinz/vim-signify'
 Bundle 'moll/vim-bbye'
 " Bundle 'matze/vim-move'
 Bundle 'ingydotnet/yaml-vim'
-Bundle 'sbl/scvim'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'guns/vim-clojure-static'
-Bundle 'paredit.vim'
+" Bundle 'sbl/scvim'
+" Bundle 'digitaltoad/vim-jade'
+" Bundle 'kchmck/vim-coffee-script'
+" Bundle 'guns/vim-clojure-static'
+" Bundle 'paredit.vim'
 Bundle 'UltiSnips'
 Bundle 'vim-less'
 Bundle 'isRuslan/vim-es6'
@@ -43,11 +43,8 @@ Bundle 'pangloss/vim-javascript'
 " Bundle 'kchmck/vim-coffee-script'
 " Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
+Bundle 'twitvim/twitvim'
 "Bundle 'python-mode'
-" Bundle 'scrooloose/nerdtree'
-" Bundle 'scrooloose/syntastic'
-" Bundle 'scrooloose/nerdtree'
-" Bundle 'scrooloose/syntastic'
 " Bundle 'easytags'
 " Bundle 'bling/vim-airline'
 " Bundle 'mustache/vim-mustache-handlebars'
@@ -122,6 +119,11 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_python_flake8_args='--ignore=E501,E225'
 
 " Load skeleton
 autocmd BufNewFile  *.html 0r ~/.vim/skeleton/skeleton.html
+
+let g:khuno_max_line_length=120
+
+set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
