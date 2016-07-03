@@ -113,6 +113,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_python_flake8_args='--ignore=E501,E225'
+let g:syntastic_typescript_tsc_args='--jsx react'
 
 " Load skeleton
 autocmd BufNewFile  *.html 0r ~/.vim/skeleton/skeleton.html
