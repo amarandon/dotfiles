@@ -7,8 +7,6 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'mxw/vim-jsx'
-Bundle 'elixir-lang/vim-elixir'
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
@@ -17,43 +15,16 @@ Bundle "alfredodeza/khuno.vim"
 Bundle 'mileszs/ack.vim'
 Bundle 'tComment'
 Bundle 'tpope/vim-fugitive'
-Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'nvie/vim-flake8'
 Bundle 'mhinz/vim-signify'
 Bundle 'moll/vim-bbye'
-" Bundle 'matze/vim-move'
-Bundle 'ingydotnet/yaml-vim'
-Bundle 'sbl/scvim'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'guns/vim-clojure-static'
-Bundle 'paredit.vim'
-Bundle 'UltiSnips'
-Bundle 'vim-less'
+" Bundle 'UltiSnips'
 Bundle 'isRuslan/vim-es6'
-" Bundle 'JavaScript-Indent'
 Plugin 'honza/vim-snippets'
-Plugin 'vim-auto-save'
 Bundle 'mattn/emmet-vim'
-" Bundle 'JavaScript-Indent'
-" Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
-" Bundle 'kchmck/vim-coffee-script'
-" Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-"Bundle 'python-mode'
-" Bundle 'scrooloose/nerdtree'
-" Bundle 'scrooloose/syntastic'
-" Bundle 'scrooloose/nerdtree'
-" Bundle 'scrooloose/syntastic'
-" Bundle 'easytags'
-" Bundle 'bling/vim-airline'
-" Bundle 'mustache/vim-mustache-handlebars'
-" Bundle 'slim-template/vim-slim'
-" Bundle 'VimClojure'
-" Bundle 'pbrisbin/html-template-syntax'
 
 " General options
 filetype indent plugin on
@@ -111,11 +82,6 @@ let g:auto_save_silent = 1
 
 " Allow JSX in normal JS files
 let g:jsx_ext_required = 0
-
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
