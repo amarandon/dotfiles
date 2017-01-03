@@ -20,11 +20,13 @@ Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'nvie/vim-flake8'
 Bundle 'mhinz/vim-signify'
 Bundle 'moll/vim-bbye'
-" Bundle 'UltiSnips'
 Bundle 'isRuslan/vim-es6'
 Plugin 'honza/vim-snippets'
 Bundle 'mattn/emmet-vim'
 Bundle 'pangloss/vim-javascript'
+Bundle 'scrooloose/syntastic'
+Bundle 'twitvim/twitvim'
+Bundle 'leafgarland/typescript-vim'
 
 " General options
 filetype indent plugin on
@@ -59,14 +61,6 @@ hi DiffAdd term=bold ctermbg=2 guibg=4
 let g:tagbar_sort = 0
 set tags+=~/tags
 
-" pdb breakpoint
-map <Leader>d :call InsertPdbLine()<CR>
-
-function! InsertPdbLine()
-    let trace = expand("import pdb; pdb.set_trace()")
-    execute "normal o".trace
-endfunction
-
 set laststatus=2
 
 let g:move_key_modifier = 'C'
@@ -88,6 +82,12 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_python_flake8_args='--ignore=E501,E225'
+let g:syntastic_typescript_tsc_args='--jsx react'
 
 " Load skeleton
 autocmd BufNewFile  *.html 0r ~/.vim/skeleton/skeleton.html
+
+let g:khuno_max_line_length=120
+
+set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
