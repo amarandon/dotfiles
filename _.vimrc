@@ -56,6 +56,9 @@ cnoreabbr <expr> %% expand('%:p:h')
 hi SyntasticWarning ctermbg=blue ctermfg=white
 let g:syntastic_python_checkers=['flake8']
 map <leader>a <Esc>:Ack!
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 let g:ctrlp_extensions = ['tag']
 let g:ctrlp_custom_ignore = ['tag']
 " Map Shift-Space to open CtrlP in buffer mode
