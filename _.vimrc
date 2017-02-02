@@ -43,6 +43,9 @@ set wildignore=*.pyc
 set t_Co=256
 set showcmd
 set title
+set ignorecase
+set smartcase
+filetype plugin indent on
 
 " Custom mappings
 map <Leader>x :TComment<Return>
