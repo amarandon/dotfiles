@@ -1,6 +1,10 @@
 " No localization please
 "language en_US
 
+"""""""""""""""""""
+" Plugins loading "
+"""""""""""""""""""
+
 set nocompatible
 filetype off
 
@@ -28,7 +32,10 @@ Bundle 'scrooloose/syntastic'
 Bundle 'twitvim/twitvim'
 Bundle 'leafgarland/typescript-vim'
 
-" General options
+"""""""""""""""""""
+" General options "
+"""""""""""""""""""
+
 filetype indent plugin on
 syntax on
 set vb t_vb="
@@ -45,55 +52,60 @@ set showcmd
 set title
 set ignorecase
 set smartcase
+set tags+=~/tags
 filetype plugin indent on
 
-" Custom mappings
+"" Status line
+set laststatus=2
+set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
+
+"" Colors
+hi DiffAdd term=bold ctermbg=2 guibg=4
+
+"" Custom mappings
 map <Leader>x :TComment<Return>
 set pastetoggle=<Leader>p
 cnoreabbr <expr> %% expand('%:p:h')
 
-" Plugins config
-hi SyntasticWarning ctermbg=blue ctermfg=white
-let g:syntastic_python_checkers=['flake8']
-map <leader>a <Esc>:Ack!
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-let g:ctrlp_extensions = ['tag']
-let g:ctrlp_custom_ignore = ['tag']
-" Map Shift-Space to open CtrlP in buffer mode
-nnoremap <C-h> :CtrlPBuffer<CR>
-hi DiffAdd term=bold ctermbg=2 guibg=4
-let g:tagbar_sort = 0
-set tags+=~/tags
+"" HTML skeleton
+autocmd BufNewFile  *.html 0r ~/.vim/skeleton/skeleton.html
 
-set laststatus=2
-
-let g:move_key_modifier = 'C'
-
+"" Recognize yaml files
 au BufNewFile,BufRead *.yaml,*.yml,*.sls    setf yaml
 
-let g:sclangTerm = "gnome-terminal -x $SHELL -ic"
+""""""""""""""""""
+" Plugins config "
+""""""""""""""""""
 
-" AutoSave
-let g:auto_save = 0
-let g:auto_save_in_insert_mode = 0
-let g:auto_save_silent = 1
-
-" Allow JSX in normal JS files
-let g:jsx_ext_required = 0
-
+"" Syntastic
+hi SyntasticWarning ctermbg=blue ctermfg=white
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
+" Python
+let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_args='--ignore=E501,E225'
+" JS
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_typescript_tsc_args='--jsx react'
 
-" Load skeleton
-autocmd BufNewFile  *.html 0r ~/.vim/skeleton/skeleton.html
+"" Ack
+map <leader>a <Esc>:Ack!
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
+"" Ctrl-P
+let g:ctrlp_extensions = ['tag']
+let g:ctrlp_custom_ignore = ['tag']
+" Map Shift-Space to open CtrlP in buffer mode
+nnoremap <C-h> :CtrlPBuffer<CR>
+
+let g:move_key_modifier = 'C'
+
+" Allow JSX in normal JS files
+let g:jsx_ext_required = 0
+
+" Khuno
 let g:khuno_max_line_length=120
-
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
