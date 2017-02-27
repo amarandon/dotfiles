@@ -106,6 +106,3 @@ let g:move_key_modifier = 'C'
 
 " Allow JSX in normal JS files
 let g:jsx_ext_required = 0
-
-" Khuno
-let g:khuno_max_line_length=120
