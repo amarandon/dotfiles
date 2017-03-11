@@ -32,6 +32,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/syntastic'
 Bundle 'twitvim/twitvim'
 Bundle 'leafgarland/typescript-vim'
+Bundle 'christoomey/vim-tmux-navigator'
 
 """""""""""""""""""
 " General options "
