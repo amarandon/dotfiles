@@ -55,6 +55,7 @@ set title
 set ignorecase
 set smartcase
 set tags+=~/tags
+set hidden  " Don't loose undo history when switching buffers
 filetype plugin indent on
 
 "" Status line
