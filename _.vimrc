@@ -48,7 +48,6 @@ set ruler
 set mouse=a
 set nonu
 set incsearch
-set wildignore=*.pyc
 set t_Co=256
 set showcmd
 set title
@@ -57,6 +56,11 @@ set smartcase
 set tags+=~/tags
 set hidden  " Don't loose undo history when switching buffers
 filetype plugin indent on
+
+" Command-Line completion
+set wildignore=*.pyc
+set wildmenu
+set wildmode=list,full
 
 "" Status line
 set laststatus=2
