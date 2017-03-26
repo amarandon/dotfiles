@@ -54,6 +54,11 @@ set title
 set ignorecase
 set smartcase
 set tags+=~/tags
+set history=500  " Increase history size
+" <C-p> / <C-n> is more convenient than arrow keys to navigate in command
+" history but it doesn't do filtering. E
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
 set hidden  " Don't loose undo history when switching buffers
 filetype plugin indent on
 
