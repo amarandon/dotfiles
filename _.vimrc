@@ -11,6 +11,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'tpope/vim-unimpaired'
 Bundle 'mfukar/robotframework-vim'
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-surround'
