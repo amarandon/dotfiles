@@ -65,7 +65,7 @@ filetype plugin indent on
 " Command-Line completion
 set wildignore=*.pyc
 set wildmenu
-set wildmode=list,full
+set wildmode=full
 
 "" Status line
 set laststatus=2
