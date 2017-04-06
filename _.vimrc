@@ -22,6 +22,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'tComment'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
+Bundle 'vim-python/python-syntax'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'nvie/vim-flake8'
 Bundle 'mhinz/vim-signify'
@@ -119,3 +120,6 @@ let g:move_key_modifier = 'C'
 
 " Allow JSX in normal JS files
 let g:jsx_ext_required = 0
+
+" Python syntaxt
+let g:python_highlight_all = 1
