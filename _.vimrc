@@ -91,6 +91,8 @@ au BufNewFile,BufRead *.yaml,*.yml,*.sls    setf yaml
 " Plugins config "
 """"""""""""""""""
 
+runtime macros/matchit.vim
+
 "" Syntastic
 hi SyntasticWarning ctermbg=blue ctermfg=white
 let g:syntastic_always_populate_loc_list = 1
