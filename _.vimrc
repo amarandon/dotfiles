@@ -28,7 +28,8 @@ Bundle 'nvie/vim-flake8'
 Bundle 'mhinz/vim-signify'
 Bundle 'moll/vim-bbye'
 Bundle 'isRuslan/vim-es6'
-Plugin 'honza/vim-snippets'
+Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
 Bundle 'mattn/emmet-vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/syntastic'
@@ -111,6 +112,9 @@ map <leader>a <Esc>:Ack!
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+"" UltiSnips
+let g:UltiSnipsListSnippets="<c-l>"
 
 "" Ctrl-P
 let g:ctrlp_extensions = ['tag']
