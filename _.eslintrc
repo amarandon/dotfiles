@@ -1,16 +1,13 @@
 {
-    "parser": "babel-eslint",
-    "env": {
-        "node": true,
-        "browser": true
-    },
-    "settings": {
-        "ecmascript": 6,
-        "jsx": true
-    },
-    "plugins": [
-    ],
-    "rules": {
-      "no-undef": 1
-    }
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "no-undef": 1,
+    "quotes": 0
+  }
 }
