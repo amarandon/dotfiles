@@ -46,11 +46,9 @@ syntax on
 set vb t_vb="
 set backspace=indent,eol,start 
 set tabstop=8 expandtab shiftwidth=4 softtabstop=4
-set hlsearch
 set ruler
 set mouse=a
 set nonu
-set incsearch
 set t_Co=256
 set showcmd
 set title
@@ -64,6 +62,12 @@ cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 set hidden  " Don't loose undo history when switching buffers
 filetype plugin indent on
+
+" Search
+set hlsearch
+set incsearch
+" <C-m> removes search highlighting
+nnoremap <silent> <C-m> :<C-u>nohlsearch<CR>
 
 " Command-Line completion
 set wildignore=*.pyc
