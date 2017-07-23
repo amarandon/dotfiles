@@ -111,6 +111,10 @@ let g:syntastic_python_flake8_args='--ignore=E501,E225'
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_typescript_tsc_args='--jsx react'
 
+"" For tmux-navigator, redraw screen after saving
+"" Source: https://github.com/christoomey/vim-tmux-navigator/issues/57#issuecomment-197727175
+autocmd BufWritePost * redraw!
+
 "" Ack
 map <leader>a <Esc>:Ack!
 if executable('ag')
