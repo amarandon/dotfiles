@@ -67,7 +67,7 @@ filetype plugin indent on
 set hlsearch
 set incsearch
 " <C-m> removes search highlighting
-nnoremap <silent> <C-m> :<C-u>nohlsearch<CR>
+nnoremap <silent> <leader>m :<C-u>nohlsearch<CR>
 
 " Command-Line completion
 set wildignore=*.pyc
