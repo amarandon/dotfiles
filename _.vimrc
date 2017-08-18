@@ -14,6 +14,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'tpope/vim-unimpaired'
+Bundle 'sheerun/vim-polyglot'
 Bundle 'mfukar/robotframework-vim'
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-surround'
@@ -73,8 +74,6 @@ nnoremap <silent> <leader>m :<C-u>nohlsearch<CR>
 
 " Command-Line completion
 set wildignore=*.pyc
-set wildmenu
-set wildmode=full
 
 "" Status line
 set laststatus=2
