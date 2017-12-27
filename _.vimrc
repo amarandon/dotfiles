@@ -15,6 +15,7 @@ call vundle#rc()
 
 Bundle 'tpope/vim-unimpaired'
 Bundle 'sheerun/vim-polyglot'
+Plugin 'slashmili/alchemist.vim'
 Bundle 'mfukar/robotframework-vim'
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-surround'
