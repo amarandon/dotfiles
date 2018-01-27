@@ -14,6 +14,8 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'tpope/vim-unimpaired'
+" Takes precedence over plugin provided by vim-polyglot
+Bundle 'vim-less'
 Bundle 'sheerun/vim-polyglot'
 Plugin 'slashmili/alchemist.vim'
 Bundle 'mfukar/robotframework-vim'
