@@ -14,8 +14,8 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'tpope/vim-unimpaired'
-Bundle 'sheerun/vim-polyglot'
 Plugin 'slashmili/alchemist.vim'
+Bundle 'sheerun/vim-polyglot'
 Bundle 'mfukar/robotframework-vim'
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-surround'
