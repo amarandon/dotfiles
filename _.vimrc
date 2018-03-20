@@ -128,6 +128,7 @@ let g:UltiSnipsListSnippets="<c-l>"
 "" Ctrl-P
 let g:ctrlp_extensions = ['tag']
 let g:ctrlp_custom_ignore = ['tag']
+let g:ctrlp_working_path_mode = 'rw' " Search from current working directory
 " Map Shift-Space to open CtrlP in buffer mode
 nnoremap <C-h> :CtrlPBuffer<CR>
 
