@@ -14,10 +14,10 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'tpope/vim-unimpaired'
-" Takes precedence over plugin provided by vim-polyglot
 Bundle 'vim-less'
 Bundle 'sheerun/vim-polyglot'
 Plugin 'slashmili/alchemist.vim'
+Bundle 'sheerun/vim-polyglot'
 Bundle 'mfukar/robotframework-vim'
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-surround'
@@ -39,7 +39,6 @@ Bundle 'honza/vim-snippets'
 Bundle 'mattn/emmet-vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'scrooloose/syntastic'
-Bundle 'twitvim/twitvim'
 Bundle 'leafgarland/typescript-vim'
 Bundle 'christoomey/vim-tmux-navigator'
 
@@ -131,6 +130,7 @@ let g:UltiSnipsListSnippets="<c-l>"
 "" Ctrl-P
 let g:ctrlp_extensions = ['tag']
 let g:ctrlp_custom_ignore = ['tag']
+let g:ctrlp_working_path_mode = 'rw' " Search from current working directory
 " Map Shift-Space to open CtrlP in buffer mode
 nnoremap <C-h> :CtrlPBuffer<CR>
 
